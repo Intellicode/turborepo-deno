@@ -1,11 +1,13 @@
 {
   "$schema": "https://turborepo.com/schema.json",
-  "ui": "tui",
+   "daemon": false,
   "tasks": {
+     "test": {
+      "dependsOn": ["build"]
+    },
     "build": {
       "dependsOn": ["^build"],
-      "inputs": ["$TURBO_DEFAULT$", ".env*"],
-      "outputs": [".next/**", "!.next/cache/**"]
+      "inputs": ["$TURBO_DEFAULT$", ".env*"]
     },
     "lint": {
       "dependsOn": ["^lint"]
