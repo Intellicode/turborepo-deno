@@ -1,1 +1,1 @@
-const a = 1;
+const a = 1; // This is a simple variable declaration
