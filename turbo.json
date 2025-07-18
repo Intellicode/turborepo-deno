@@ -3,11 +3,11 @@
    "daemon": false,
   "tasks": {
      "test": {
-      "dependsOn": ["build"]
+      "dependsOn": ["^test"]
     },
     "build": {
-      "dependsOn": ["^build"],
-      "inputs": ["$TURBO_DEFAULT$", ".env*"]
+      "dependsOn": ["^build"]
+
     },
     "lint": {
       "dependsOn": ["^lint"]

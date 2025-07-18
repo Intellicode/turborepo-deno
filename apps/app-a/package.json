@@ -8,6 +8,7 @@
   "main": "index.js",
   "scripts": {
     "build": "deno check",
-    "test": "deno test"
+    "test": "deno test",
+        "check-types": "deno check"
   }
 }

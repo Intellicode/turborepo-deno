@@ -8,7 +8,7 @@
   "scripts": {
     "lint": "node -v",
     "generate:component": "turbo gen react-component",
-    "check-types": "tsc --noEmit",
+    "check-types": "deno check",
     "test": "deno test"
   },
   "devDependencies": {
